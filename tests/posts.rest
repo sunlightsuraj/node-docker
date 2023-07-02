@@ -1,0 +1,30 @@
+### GET posts
+GET http://localhost:3000/api/v1/posts
+Content-Type: application/json
+
+### GET post
+GET http://localhost:3000/api/v1/posts/649d32aeff4f0bcb3b3f51b1
+Content-Type: application/json
+
+### create post
+POST http://localhost:3000/api/v1/posts
+Content-Type: application/json
+
+{
+	"title": "My fourth post.",
+	"body": "This is test body."
+}
+
+### create post
+PUT http://localhost:3000/api/v1/posts/649d32aeff4f0bcb3b3f51b1
+Content-Type: application/json
+
+{
+	"title": "My first post updated.",
+	"body": "This is test body."
+}
+
+
+### Delete post
+DELETE http://localhost:3000/api/v1/posts/649d32aeff4f0bcb3b3f51b1
+Content-Type: application/json
