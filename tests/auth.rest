@@ -1,8 +1,11 @@
-GET http://localhost:3000/api/v1
+# @server=http://localhost:3000/
+@server=http://10.56.79.171/
+
+GET {{server}}api/v1
 Content-Type: application/json
 
 ### Signup
-POST http://localhost:3000/api/v1/users/signup
+POST {{server}}api/v1/users/signup
 Content-Type: application/json
 
 {
@@ -12,10 +15,10 @@ Content-Type: application/json
 
 
 ### Login
-POST http://localhost:3000/api/v1/users/login
+POST {{server}}api/v1/users/login
 Content-Type: application/json
 
 {
-	"username": "suraj1",
+	"username": "suraj2",
 	"password": "suraj123"
 }
